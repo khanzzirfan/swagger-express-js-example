@@ -1,6 +1,6 @@
 {
   "name": "movie-collection",
-  "version": "0.0.3",
+  "version": "0.0.0-development",
   "private": true,
   "description": "New Swagger API Project",
   "keywords": [],
@@ -15,11 +15,22 @@
   },
   "devDependencies": {
     "should": "^7.1.0",
-    "supertest": "^1.0.0"
+    "supertest": "^1.0.0",
+    "semantic-release": "^17.4.4"
   },
   "scripts": {
     "start": "node app.js",
-    "test": "swagger project test",
-    "release": "standard-version"
+    "build": "echo build done",
+    "test": "echo 'test done'",
+    "testx": "swagger project test",
+    "release": "standard-version",
+    "dryrun": "standard-version --dry-run",
+    "swagger:bundle": "npx swagger-cli bundle -r swagger-ref.yaml -o swagger.yaml -t yaml",
+    "swagger:validate": "npx swagger-cli validate swagger.yaml",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khanzzirfan/swagger-express-js-example.git"
   }
 }

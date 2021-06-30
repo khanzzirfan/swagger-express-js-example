@@ -1,0 +1,15 @@
+GetAllMovies:
+  get:
+    tags:
+      - "movies"
+    summary: "get the movies list"
+    description: "Muliple tags can be provided with comma separated strings. Use tag1, tag2, tag3 for testing."
+    operationId: "getAllMovies"
+    responses:
+      "200":
+        description: Success
+        content:
+          application/json:
+            schema:
+              type: object
+              $ref: "./definitions.yaml#/GetMoviesListResponse"

@@ -2,7 +2,7 @@
 // Include our "db"
 var db = require("../../config/db")();
 // Exports all the functions to perform on the db
-module.exports = { getAll, save, getOne, update, delMovie, getCustomOne };
+module.exports = { getAll, save, getOne, update, delMovie };
 
 //GET /movie operationId
 function getAll(req, res, next) {
@@ -46,6 +46,6 @@ function delMovie(req, res, next) {
 }
 
 //GET /movie operationId
-function getCustomOne(req, res, next) {
+function getCustomTwo(req, res, next) {
   res.json({ movies: db.find() });
 }

@@ -1,0 +1,14 @@
+GetMoviesListResponse:
+  properties:
+    # The array of movies
+    movies:
+      type: array
+      items:
+        type: object
+        properties:
+          id:
+            type: string
+          title:
+            type: string
+          year:
+            type: number
