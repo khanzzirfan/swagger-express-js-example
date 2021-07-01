@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0](https://github.com/khanzzirfan/swagger-express-js-example/compare/v0.0.9-beta.4...v0.1.0) (2021-07-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* **updateversion:** trigger the breaking change.
+
+### Features
+
+* **updateversion:** updating to major version ([a9627d0](https://github.com/khanzzirfan/swagger-express-js-example/commit/a9627d02a8a56f3648726dad0c228e65af3e907e))
+
 ### [0.0.9-beta.4](https://github.com/khanzzirfan/swagger-express-js-example/compare/v0.0.9-beta.3...v0.0.9-beta.4) (2021-07-01)
 
 ### [0.0.9-beta.3](https://github.com/khanzzirfan/swagger-express-js-example/compare/v0.0.9-beta.2...v0.0.9-beta.3) (2021-07-01)
