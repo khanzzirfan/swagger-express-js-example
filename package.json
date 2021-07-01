@@ -37,7 +37,8 @@
     "dryrun": "standard-version --dry-run",
     "swagger:bundle": "npx swagger-cli bundle -r swagger-ref.yaml -o swagger.yaml -t yaml",
     "swagger:validate": "npx swagger-cli validate swagger.yaml",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
