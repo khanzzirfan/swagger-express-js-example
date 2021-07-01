@@ -1,6 +1,6 @@
 GetMoviesListResponse:
   properties:
-    # The array of movies
+    # The array of movies. updated commitlint
     movies:
       type: array
       items:
