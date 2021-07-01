@@ -1,21 +1,23 @@
 openapi: 3.0.0
 info:
-  version: 1.0.0
+  version: 1.0.0.alpha+444
   title: Swagger Petstore
   license:
     name: MIT
 servers:
-  - url: "http://petstore.swagger.io/v1"
+  - url: http://petstore.swagger.io/v1
 paths:
   /movies:
     get:
       tags:
         - movies
       summary: get the movies list
-      description: "Muliple tags can be provided with comma separated strings. Use tag1, tag2, tag3 for testing."
+      description: >-
+        Muliple tags can be provided with comma separated strings. Use tag1,
+        tag2, tag3 for testing.
       operationId: getAllMovies
       responses:
-        "200":
+        '200':
           description: Success
           content:
             application/json:
@@ -48,7 +50,7 @@ paths:
             type: integer
             format: int32
       responses:
-        "200":
+        '200':
           description: A paged array of pets
           headers:
             x-next:
@@ -93,7 +95,7 @@ paths:
       tags:
         - pets
       responses:
-        "201":
+        '201':
           description: Null response
         default:
           description: unexpected error
@@ -110,7 +112,7 @@ paths:
                     format: int32
                   message:
                     type: string
-  "/pets/{petId}":
+  /pets/{petId}:
     get:
       summary: Info for a specific pet
       operationId: showPetById
@@ -124,7 +126,7 @@ paths:
           schema:
             type: string
       responses:
-        "200":
+        '200':
           description: Expected response to a valid request
           content:
             application/json:

@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "prerelease": "echo 'done'",
+    "release": "standard-version -a --dry-run"
+  }
+}
